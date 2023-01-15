@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+:root{
+    --primary: #FF900E;
+    --secondary: rgba(255, 144, 14, 0.1);
+    --dark: #131313;
+}
+.full-width{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+.fluid-img{
+    width: 99%;
+    height: auto;
+    margin: 0 auto;
+}
+.paragraph-text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+    line-height: 20px;
+}
+.btn-primary{
+    padding: 20px 25px;
+    border: none;
+    background-color: var(--primary);
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-top: 32px;
+    margin-left: 32px;
+}
+
+/* ---------------------------------------------------------------- 
+                        style start
+ ---------------------------------------------------------------- */
+header{
+    background-color: var(--secondary);
+}
+ .header-section, .nav-items{
+    display: flex;
+    background-color: #FF900E;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: var(--dark);
+}
+.nav-bar{
+    display: none;
+}
+.item{
+    list-style: none;
+    padding-right: 40px;
+}
+
+/* banner-section */
+.banner-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner-content{
+    width: 780px;
+    text-align: center;
+    padding: 50px 5px;
+}
+.banner-content h3{
+    font-size: 64px;
+    margin: 10px auto;
+    font-weight: 700;
+}
+.banner-img img{
+    margin-bottom: 45px;
+}
+
+
+
+/* ---------------------------------------------------------------- 
+                        Media query
+ ---------------------------------------------------------------- */
+
+ @media only screen and (max-width: 576px) {
+    .item-1, .item-2, .item-3{
+        display: none;
+        padding-right: 0px;
+    }
+    .banner-content{
+        width: auto;
+    }
+ }
