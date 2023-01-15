@@ -122,6 +122,47 @@ a{
 .span-2, .span-3{
     font-weight: 900;
 }
+
+/* experience section */
+
+.experience-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+}
+.experience-content{
+    /* width: 40%; */
+}
+.year-span{
+    font-size: 95px;
+}
+.year-btn{
+    margin-top: -250px;
+    margin-left: -50px;
+}
+.exp-title{
+    font-size: 45px;
+    font-weight: 700;
+    padding: 10px;
+    border-left: 10px solid var(--primary);
+}
+.exp-sub-title{
+    font-weight: 600;
+    font-size: 20px;
+}
+.exp-cards{
+    margin: 20px auto;
+}
+.card{
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.experience-img{
+    margin-left: 60px;
+}
 /* ---------------------------------------------------------------- 
                         Media query
  ---------------------------------------------------------------- */
@@ -140,5 +181,18 @@ a{
     }
     .feature-content{
         text-align: center;
+    }
+    /* experience section */
+    .experience-section{
+        flex-direction: column;
+    }
+    .exp-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    .card{
+        margin-top: 0;
     }
  }
