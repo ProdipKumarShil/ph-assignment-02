@@ -145,6 +145,7 @@ a{
     font-size: 45px;
     font-weight: 700;
     padding: 10px;
+    margin-bottom: 20px;
     border-left: 10px solid var(--primary);
 }
 .exp-sub-title{
@@ -163,6 +164,113 @@ a{
 .experience-img{
     margin-left: 60px;
 }
+
+/* collection section */
+.collection-section{}
+
+/* .collection-item{
+    background-color: var(--primary);
+    padding: 15px;
+} */
+.collection-item-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.collection-item{
+    /* width: 329px; */
+    /* height: 476px; */
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: #fff;
+}
+.item-title{
+    font-weight: 500;
+    font-size: 28px;
+    color: var(--font-color);
+}
+.item-price{
+    font-weight: 400;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.87);
+}
+.item-rating ul{
+    display: flex;
+    list-style: none;
+}
+.item-rating ul li{
+    margin-right: 5px;
+}
+.rating{
+    margin-left: 5px;
+}
+.item-rating, .item-description{
+    font-weight: 700;
+    font-size: 14px;
+    color: #787885;
+}
+
+
+/* project info section */
+
+.project-cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px auto;
+}
+.project-card{
+    width: 241px;
+    border: 1px solid var(--primary);
+    text-align: center;
+    padding: 45px 35px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.project-card .span-1{
+    margin: 10px auto;
+    color: #2b2b2b;
+    font-weight: 800;
+}
+.project-para{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--font-color);
+}
+/* sponsor images */
+
+.sponsor-imgs{
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.img-filter{
+    /* margin: 50px; */
+    padding: 50px;
+    filter: grayscale();
+    border-radius: 10px;
+    cursor: pointer;
+}
+.img-filter:hover{
+    filter: none;
+    transition-duration: 0.5s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    filter: saturate(5);
+
+}
+
+.footer{
+    background-color: var(--secondary);
+    text-align: center;
+    margin: 100px auto;
+}
+.footer p{
+    padding: 50px;
+}
+
 /* ---------------------------------------------------------------- 
                         Media query
  ---------------------------------------------------------------- */
@@ -177,7 +285,8 @@ a{
     }
     /* feature section */
     .feature-section{
-        flex-direction: column;
+        flex-direction: column-reverse;
+        margin-top: 50px;
     }
     .feature-content{
         text-align: center;
@@ -194,5 +303,10 @@ a{
     }
     .card{
         margin-top: 0;
+    }
+
+    /* sponsor */
+    .img-filter{
+        padding: 20px;
     }
  }
