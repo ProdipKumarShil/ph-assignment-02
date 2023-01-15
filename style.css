@@ -191,56 +191,6 @@ a{
     padding: 10px 0;
     margin-bottom: 20px;
 }
-.teacher-title{
-
-}
-
-/* collection section */
-
-/* .collection-item{
-    background-color: var(--primary);
-    padding: 15px;
-} */
-.collection-item-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-.collection-item{
-    /* width: 329px; */
-    /* height: 476px; */
-    margin: 0 auto;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    background-color: #fff;
-}
-.item-title{
-    font-weight: 500;
-    font-size: 28px;
-    color: var(--font-color);
-}
-.item-price{
-    font-weight: 400;
-    font-size: 24px;
-    color: rgba(0, 0, 0, 0.87);
-}
-.item-rating ul{
-    display: flex;
-    list-style: none;
-}
-.item-rating ul li{
-    margin-right: 5px;
-}
-.rating{
-    margin-left: 5px;
-}
-.item-rating, .item-description{
-    font-weight: 700;
-    font-size: 14px;
-    color: #787885;
-}
-
 
 /* project info section */
 
@@ -305,6 +255,17 @@ a{
  ---------------------------------------------------------------- */
 
  @media only screen and (max-width: 576px) {
+    /* nav-bar */
+    .nav-bar{
+        display: inline;
+    }
+    .line{
+        height: 3px;
+        width: 30px;
+        margin: 3px auto;
+        background-color: #131313;
+        color: #000;
+    }
     .item-1, .item-2, .item-3{
         display: none;
         padding-right: 0px;
